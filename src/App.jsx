@@ -121,7 +121,7 @@ const App = () => {
         </>
       )}
       {activeTab === 'catalog' && (
-        <CollectedPokemon collectedIds={Array.from(collectedPokemon)} />
+        <CollectedPokemon className="game-board" collectedIds={Array.from(collectedPokemon)} />
       )}
     </div>
   );

@@ -23,9 +23,9 @@ const CollectedPokemon = ({ collectedIds }) => {
   }, [collectedIds]);
 
   return (
-    <div className="collected-pokemon">
+    <div class='display-case'>
       {pokemonDetails.map(pokemon => (
-        <div key={pokemon.id} className="pokemon-card">
+        <div key={pokemon.id} className="display-card">
           <img src={pokemon.image} alt={pokemon.name} />
           <h4>{pokemon.name}</h4>
         </div>

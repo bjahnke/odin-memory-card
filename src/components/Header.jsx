@@ -14,7 +14,8 @@ const Header = ({ currentScore, bestScore, maxScore, gamesBeaten }) => {
   return (
     <header>
       <h1>Memory Game</h1>
-      <p>Game Description: Select all images without repeating to increase score!</p>
+      <p>Description: Select all images without repeating to increase score!</p>
+      <p>Beat games to add pokemon to your collection!</p>
       <p>Current Score: {currentScore}</p>
       <p>Best Score: {bestScore} / {maxScore}</p>
       <p>Games Beaten: {gamesBeaten}</p>
