@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Card = ({ card, onCardClick }) => {
+const Card = ({ id, image, onCardClick }) => {
   return (
-    <div className="card" onClick={() => onCardClick(card)}>
-      {card}
+    <div className="card" onClick={() => onCardClick(id)}>
+      <img src={image} alt="image" />
     </div>
   );
 };

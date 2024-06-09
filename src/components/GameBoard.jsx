@@ -5,7 +5,7 @@ const GameBoard = ({ cards, onCardClick }) => {
   return (
     <div className="game-board">
       {cards.map((card) => (
-        <Card key={card} card={card} onCardClick={onCardClick} />
+        <Card key={card.id} card={card} onCardClick={onCardClick} />
       ))}
     </div>
   );
