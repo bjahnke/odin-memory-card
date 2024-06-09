@@ -1,11 +1,24 @@
 import React from 'react';
 
-const Header = ({ currentScore, bestScore }) => {
+/**
+ * Represents the header component of the memory game.
+ *
+ * @param {Object} props - The props object containing the component's properties.
+ * @param {number} props.currentScore - The current score of the game.
+ * @param {number} props.bestScore - The best score achieved in the game.
+ * @param {number} props.maxScore - The maximum possible score in the game.
+ * @param {number} props.gamesBeaten - The number of games beaten.
+ * @returns {JSX.Element} The rendered header component.
+ */
+const Header = ({ currentScore, bestScore, maxScore, gamesBeaten }) => {
   return (
     <header>
       <h1>Memory Game</h1>
+      <p>Game Description: Select all images without repeating to increase score!</p>
       <p>Current Score: {currentScore}</p>
-      <p>Best Score: {bestScore}</p>
+      <p>Best Score: {bestScore} / {maxScore}</p>
+      <p>Games Beaten: {gamesBeaten}</p>
+      
     </header>
   );
 };
