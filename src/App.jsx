@@ -10,7 +10,7 @@ On render, generate cards with key and image properties.
 */
 // Adjust based on the current number of Pokémon
 const MAX_POKEMON_ID = 1025;
-const GAME_SIZE = 12;
+const GAME_SIZE = 6;
 
 /**
  * Generates a set of unique random numbers by selecting random indices from an initial set and then removing the selected element.
